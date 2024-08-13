@@ -256,4 +256,31 @@ footer.footer {
 
 }
 
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    animation: scroll 3s linear infinite;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%;
+    display: block;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
 /* Rodapé */
