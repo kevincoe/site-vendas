@@ -257,26 +257,22 @@ footer.footer {
 }
 
 .carousel {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
+    position: fixed;
 }
 
 .carousel-inner {
     display: flex;
-    animation: scroll 40s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 
 .carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
+    padding: 50px;
 }
 
 .carousel img {
+    height: 100%;
     width: 100%;
-    display: block;
+    display: flex;
 }
 
 @keyframes scroll {
