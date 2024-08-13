@@ -266,7 +266,7 @@ footer.footer {
 
 .carousel-inner {
     display: flex;
-    animation: scroll 3s linear infinite;
+    animation: scroll 40s linear infinite;
 }
 
 .carousel-item {
