@@ -256,17 +256,25 @@ footer.footer {
 
 }
 
+.mestreCarousel {
+    height: 100%;
+    position: relative;
+    overflow: hidden; /* Adicione overflow hidden para esconder os itens duplicados fora da área visível */
+}
+
 .carousel {
     position: fixed;
+    display: flex; /* Adicione display flex para alinhar os itens horizontalmente */
 }
 
 .carousel-inner {
     display: flex;
-    animation: scroll 10s linear infinite;
+    animation: scroll 10s linear infinite normal;
 }
 
 .carousel-item {
     padding: 50px;
+    flex: 0 0 auto; /* Adicione flex 0 0 auto para evitar que os itens se estiquem */
 }
 
 .carousel img {
@@ -277,6 +285,6 @@ footer.footer {
 
 @keyframes scroll {
     0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+    100% { transform: translateX(calc(-250px * 5)); }
 }
 /* Rodapé */
