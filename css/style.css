@@ -1,8 +1,7 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 main#container {
@@ -10,52 +9,6 @@ main#container {
     height: auto;
     margin: 0 auto;
     max-width: 425px;
-}
-
-.header {
-    background-color: #C4170C;
-    text-align: center;
-    font-weight: normal;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.header h1 {
-    font-size: 20px;
-    padding: 0 0 0 135px;
-}
-
-.menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.logo img {
-    border-style: none;
-    max-height: 45px;
-    margin-top: 3px;
-    margin-left: 10px; /* Adicione margem se necessário */
-}
-
-.spacer {
-    flex-grow: 1;
-}
-
-.search-icon {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.membros {
-    padding: 0 15px 0 0;
-}
-
-.e-mail {
-    font-size: 25px;
-    padding: 0 15px 0 0;
 }
 
 .principal {
@@ -73,7 +26,6 @@ main#container {
 
 .principal h1 span {
     color: #C4170C;
-    
 }
 
 .principal h2 {
@@ -94,6 +46,10 @@ main#container {
     padding: 0 0 0 10px;
 }
 
+.principal h3 span {
+    color: #C4170C;
+}
+
 .principal h4 {
     text-align: left;
     font-family: "sans-serif";
@@ -103,52 +59,8 @@ main#container {
     padding: 0 0 0 10px;
 }
 
-
-.principal h3 span {
-    color: #C4170C;
-    
-}
-
-.rede_social {
-    text-align: left;
-    padding: 0 0 0 10px;
-}
-
 .area_video {
     width: 100%;
-}
-
-.btn_cta {
-    display: none;
-    cursor: pointer;
-    margin: 10px auto;
-    display: inline-block;
-    text-align: center;
-    width: 90%;
-    background: green;
-    color: #fff;
-    line-height: 1;
-    padding: 15px;
-    font-size: 1.125rem;
-    animation: pulsar 1.5s infinite;
-    font-weight: bold;
-    border-radius: 8px;
-    border: none;
-}
-
-@keyframes pulsar {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(255,0,0,.7);
-    }
-    70% {
-        transform: scale(1.05);
-        box-shadow: 0 0 0 10px rgba(255,0,0,0);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(255,0,0,0);
-    }
 }
 
 body {
@@ -158,87 +70,12 @@ body {
     padding: 0;
 }
 
-.cnn-letreiro {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 30px;
-    background-color: #C4170C;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    line-height: 30px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-top: 1px solid white;
-}
-
-.div_letreiro {
-    background-color: black;
-}
-
-.cnn-text {
-    display: inline-block;
-    animation: scrollText 10s linear infinite;
-}
-
-@keyframes scrollText {
-    0% {
-        transform: translateX(50%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.comments {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-}
-
-.comment {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.comment img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.comment-content {
-    flex-grow: 1;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-}
-
-.user-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.user-info strong {
-    font-weight: bold;
-}
-
-.like-icon {
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/* Rodapé */
 footer.footer {
     padding: 100px 0;
     background: #f0f0f0;
     margin: 20px 0 0 0;
 }
+
 .footer p {
     font-size: 12px;
     color: #000000;
@@ -246,25 +83,25 @@ footer.footer {
     width: 50%;
     margin: 0 auto 15px auto;
 }
+
 .footer a {
     clear: both;
     display: block;
     text-align: center;
     margin: 0;
-  color: gray;
-  font-size: 12px;
-
+    color: gray;
+    font-size: 12px;
 }
 
 .mestreCarousel {
     height: 100%;
     position: relative;
-    overflow: hidden; /* Adicione overflow hidden para esconder os itens duplicados fora da área visível */
+    overflow: hidden;
 }
 
 .carousel {
     position: fixed;
-    display: flex; /* Adicione display flex para alinhar os itens horizontalmente */
+    display: flex;
 }
 
 .carousel-inner {
@@ -274,17 +111,10 @@ footer.footer {
 
 .carousel-item {
     padding: 50px;
-    flex: 0 0 auto; /* Adicione flex 0 0 auto para evitar que os itens se estiquem */
-}
-
-.carousel img {
-    height: 100%;
-    width: 100%;
-    display: flex;
+    flex: 0 0 auto;
 }
 
 @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(calc(-250px * 5)); }
 }
-/* Rodapé */
